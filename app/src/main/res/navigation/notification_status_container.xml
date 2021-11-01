@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_graph"
+    app:startDestination="@id/notificationCompleteFragment">
+
+    <keep_state_fragment
+        android:id="@+id/notificationCompleteFragment"
+        android:name="com.sovonthy.tshop.view.notification.complete.NotificationCompleteFragment"
+        android:label="fragment_notification_complete"
+        tools:layout="@layout/fragment_notification_complete" />
+    <keep_state_fragment
+        android:id="@+id/notification_Cancel_Fragment"
+        android:name="com.sovonthy.tshop.view.notification.cancel.NotificationCancelFragment"
+        android:label="fragment_notification__cancel"
+        tools:layout="@layout/fragment_notification_cancel" />
+</navigation>

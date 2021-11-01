@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cardFragment">
+
+    <keep_state_fragment
+        android:id="@+id/cardFragment"
+        android:name="com.sovonthy.tshop.view.product.ProductFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
+    <keep_state_fragment
+        android:id="@+id/messageFragment2"
+        android:name="com.sovonthy.tshop.view.message.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <keep_state_fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.sovonthy.tshop.view.favourite.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <keep_state_fragment
+        android:id="@+id/notificationContainerFragment"
+        android:name="com.sovonthy.tshop.view.notification.NotificationContainerFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <keep_state_fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.sovonthy.tshop.view.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+</navigation>
+

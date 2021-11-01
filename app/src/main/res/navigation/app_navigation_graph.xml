@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/menuFragment">
+
+    <keep_state_fragment
+        android:id="@+id/menuFragment"
+        android:name="com.sovonthy.tshop.view.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="com.sovonthy.tshop.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
